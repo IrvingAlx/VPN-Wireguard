@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker exec -it wireguard iptables -F
 docker exec -it wireguard iptables -P INPUT DROP
 docker exec -it wireguard iptables -P FORWARD DROP
