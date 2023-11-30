@@ -1,4 +1,6 @@
 #!/bin/bash
+docker-compose down
+docker-compose up -d --build
 
 docker exec -it wireguard iptables -F
 docker exec -it wireguard iptables -P INPUT DROP
