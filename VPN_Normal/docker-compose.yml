@@ -3,8 +3,8 @@ version: "3.8"
 services:
   wg-easy:
     environment:
-      - WG_HOST=192.168.127.244
-      - PASSWORD=password
+      - WG_HOST=${WG_HOST}
+      - PASSWORD=${WG_PASSWORD}
     image: weejewel/wg-easy
     volumes:
       - ~/.wg-easy:/etc/wireguard
